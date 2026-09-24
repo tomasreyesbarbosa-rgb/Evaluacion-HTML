@@ -1,4 +1,4 @@
-/*Variables de color*/
+/* Variables de Color (Azules, grises, blanco) */
 :root {
     --color-primario: #0056b3; 
     --color-secundario: #00a8ff; 
@@ -73,32 +73,31 @@ body {
     }
 }
 
-/*Tablet: 3 columnas*/
+/* Escritorio: 3 columnas */
 @media (min-width: 1024px) {
     .servicios-contenedor {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/*Servicios de card*/
-.servicios-card {
+/* Tarjeta de Servicio (Article) */
+.servicio-card {
     background-color: var(--color-blanco);
     border-radius: var(--borde-radio);
     padding: 2rem;
     text-align: center;
     box-shadow: var(--sombra-suave);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0;
+    opacity: 0; 
     animation: fadeInSlideUp 0.8s ease forwards;
 }
 
-/*Hover de la tarjeta*/
-
-.servicios-card:hover{
+/* Hover de la Tarjeta */
+.servicio-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--sombra-hover);
     border-color: var(--color-secundario);
@@ -116,19 +115,20 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.servicios-card:hover .icono-contenedor {
+.servicio-card:hover .icono-contenedor {
     background-color: var(--color-primario);
 }
 
-.servicios-card:hover .servicios-icono {
+.servicio-card:hover .servicio-icono {
     filter: brightness(0) invert(1);
 }
 
-.servicios-icono {
+.servicio-icono {
     width: 40px;
     height: 40px;
     transition: filter 0.3s ease;
 }
+
 .servicio-card h3 {
     font-size: 1.4rem;
     color: var(--color-primario);
@@ -147,28 +147,29 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--color-secundario);
-    margin-bottom: auto;
+    margin-top: auto;
     padding-top: 1rem;
     border-top: 1px solid #eee;
     width: 100%;
 }
 
-/*Footer*/
-
+/* Footer */
 .footer {
     text-align: center;
     padding: 2rem;
     background-color: #222;
     color: #ccc;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
-/*Animación de entrada*/
+/* Animación de entrada */
 @keyframes fadeInSlideUp {
-    0%{
-        opacity: 0%;
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
     }
-    100%{
-        opacity: 100%;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
