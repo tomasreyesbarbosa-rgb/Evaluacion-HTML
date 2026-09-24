@@ -1,4 +1,4 @@
-/* Variables de Color (Azules, grises, blanco) */
+/*Variables de Color (Azules, grises, blanco)*/
 :root {
     --color-primario: #0056b3; 
     --color-secundario: #00a8ff; 
@@ -10,7 +10,7 @@
     --borde-radio: 12px;
 }
 
-/* Reseteo Básico */
+/*Reseteo Básico*/
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/*Header*/
 .header {
     background-color: var(--color-primario);
     color: var(--color-blanco);
@@ -33,7 +33,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Sección Servicios */
+/*Sección Servicios*/
 #servicios {
     max-width: 1200px;
     margin: 0 auto;
@@ -58,29 +58,29 @@ body {
     border-radius: 2px;
 }
 
-/* Grid de Servicios */
+/*Grid de Servicios*/
 .servicios-contenedor {
     display: grid;
     gap: 2rem;
-    /* Móvil: 1 columna por defecto */
+    /*Móvil: 1 columna por defecto*/
     grid-template-columns: 1fr;
 }
 
-/* Tablet: 2 columnas */
+/*Tablet: 2 columnas*/
 @media (min-width: 768px) {
     .servicios-contenedor {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Escritorio: 3 columnas */
+/*Escritorio: 3 columnas*/
 @media (min-width: 1024px) {
     .servicios-contenedor {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Tarjeta de Servicio (Article) */
+/*Tarjeta de Servicio (Article)*/
 .servicio-card {
     background-color: var(--color-blanco);
     border-radius: var(--borde-radio);
@@ -96,7 +96,7 @@ body {
     animation: fadeInSlideUp 0.8s ease forwards;
 }
 
-/* Hover de la Tarjeta */
+/*Hover de la Tarjeta*/
 .servicio-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--sombra-hover);
@@ -152,8 +152,8 @@ body {
     border-top: 1px solid #eee;
     width: 100%;
 }
-
-/* Footer */
+    
+/*Footer*/
 .footer {
     text-align: center;
     padding: 2rem;
@@ -162,7 +162,7 @@ body {
     margin-top: 4rem;
 }
 
-/* Animación de entrada */
+/*Animación de entrada*/
 @keyframes fadeInSlideUp {
     0% {
         opacity: 0;
