@@ -1,0 +1,34 @@
+/*Variables de color*/
+:root {
+    --color-primario: #0056b3; 
+    --color-secundario: #00a8ff; 
+    --color-fondo: #f4f7f6; 
+    --color-texto: #333333; 
+    --color-blanco: #ffffff;
+    --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.08);
+    --sombra-hover: 0 12px 24px rgba(0, 86, 179, 0.2);
+    --borde-radio: 12px;
+}
+
+/*Reseteo Básico*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/*Header*/
+.header{
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
